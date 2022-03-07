@@ -1,6 +1,6 @@
 # server
 server:
-  port: 7001
+  port: 7000
 
 spring:
   application:
