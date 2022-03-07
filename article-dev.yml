@@ -5,7 +5,10 @@ server:
 spring:
   application:
     name: article-service
-
+  # auto update config
+  rabbitmq:
+    host: localhost:15672
+    
   # consul config
   cloud:
     consul:
