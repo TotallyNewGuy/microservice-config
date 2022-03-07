@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: gateway-service
+    
+  # auto update config
+  rabbitmq:
+    host: localhost:15672
+    
   # database
   datasource:
     password: AppleMan922
