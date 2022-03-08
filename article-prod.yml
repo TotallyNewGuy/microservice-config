@@ -7,10 +7,10 @@ spring:
     name: article-service
   # auto update config
   rabbitmq:
-    host: localhost
+    host: 172.31.11.178
     
   zipkin:
-    base-url: http://127.0.0.1:9411/
+    base-url: http://172.31.11.178:9411/
     sender:
       type: web
 
@@ -21,7 +21,7 @@ spring:
   # consul config
   cloud:
     consul:
-      host: 127.0.0.1
+      host: 172.31.11.178
       port: 8500
       discovery:
         register: true
@@ -45,11 +45,11 @@ spring:
     password: AppleMan922
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    url: jdbc:mysql://localhost:3306/myBlog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC%2D8
+    url: jdbc:mysql://172.17.0.2:3306/myBlog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC%2D8
 
   # Redis
   redis:
-    host: localhost
+    host: 172.17.0.3
     port: 6379
 
   servlet:
